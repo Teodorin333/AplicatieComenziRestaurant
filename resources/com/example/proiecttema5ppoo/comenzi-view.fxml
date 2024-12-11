@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750" prefWidth="1200" style="-fx-border-color: #ffa400; -fx-border-width: 10; -fx-border-style: dotted;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiecttema5ppoo.CreareComController">
+   <children>
+      <Label layoutX="40.0" layoutY="31.0" prefHeight="46.0" prefWidth="482.0" text="Adaugati produsele in comanda" textAlignment="CENTER" textFill="#ffa400">
+         <font>
+            <Font name="Ebrima Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="addItemButton" layoutX="34.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#onAddItemClick" prefHeight="48.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="105.0" layoutY="97.0" prefHeight="46.0" prefWidth="482.0" text="Adauga produs" textAlignment="CENTER" textFill="#ffa400">
+         <font>
+            <Font name="Ebrima Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listViewProduse" layoutX="42.0" layoutY="164.0" prefHeight="483.0" prefWidth="1114.0" />
+      <HBox alignment="CENTER" layoutX="112.0" layoutY="651.0" prefHeight="75.0" prefWidth="962.0" spacing="20.0">
+         <children>
+            <Button fx:id="bttnSave" mnemonicParsing="false" onMouseClicked="#salveazaDate" prefHeight="50.0" prefWidth="217.0" style="-fx-background-color: #01d124;" text="Salveaza" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttnLoad" layoutX="192.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#incarcaDate" prefHeight="50.0" prefWidth="223.0" style="-fx-background-color: #4ca7ff;" text="Incarca comenzi" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttnDelete" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#stergeComandaSelectata" prefHeight="50.0" prefWidth="209.0" style="-fx-background-color: #ffa400;" text="Sterge comanda" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="bttnExit" layoutX="545.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#inchideFereastra" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #ff594c;" text="Inchide" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

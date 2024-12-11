@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-border-color: #ffa400; -fx-border-width: 10; -fx-border-style: dotted;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiecttema5ppoo.HelloController">
+   <children>
+      <HBox alignment="CENTER" layoutX="32.0" layoutY="210.0" prefHeight="316.0" prefWidth="1150.0" spacing="50.0">
+         <children>
+            <Button fx:id="com_noua" alignment="CENTER" contentDisplay="TOP" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#onComNouaButtonClick" prefHeight="250.0" prefWidth="250.0" style="-fx-border-color: #ffa400; -fx-border-width: 10;" text="Comanda noua" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bttnRaport" alignment="CENTER" contentDisplay="TOP" graphicTextGap="22.0" mnemonicParsing="false" onMouseClicked="#onRaportClick" prefHeight="250.0" prefWidth="250.0" style="-fx-border-color: #ffa400; -fx-border-width: 10;" text="Genereaza raport" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="exitButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="22.0" layoutX="454.0" layoutY="43.0" mnemonicParsing="false" onMouseClicked="#onExitButtonClick" prefHeight="250.0" prefWidth="250.0" style="-fx-border-color: #ffa400; -fx-border-width: 10;" text="Iesire" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="433.0" layoutY="35.0" prefHeight="74.0" prefWidth="376.0" style="-fx-font-weight: bold;" text="Bon Appetit" textAlignment="CENTER" textFill="#ffa400">
+         <font>
+            <Font name="Ebrima" size="55.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
